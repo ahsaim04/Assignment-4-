@@ -8,4 +8,41 @@
 <body>
     h
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body onload="read()">
+  <div class="max-w-xl mx-auto	my-4	 h-auto w-[100%]">
+    <div class="bg-slate-100 py-8 px-4 rounded-lg">
+      <form>
+        <input type="number" class="rounded-lg h-8 px-2 border w-[60%]" id="balance" />
+        <button class="bg-blue-600 text-white rounded-lg px-3 py-1" type="submit" onclick="add()">Add</button>
+      </form>
+    </div>
+    <br>
+    <div class="bg-slate-100 py-10 px-4 rounded-lg flex justify-between">
+      <div class="w-[100%]">
+        <label for="income" class="font-bold text-2xl w">Income:</label>
+        <span id="income" class="  text-2xl">0</span>
+      </div>
+      <div class="w-[100%]">
+        <label for="income" class="font-bold text-2xl">Expense:</label>
+        <span id="expanse" class=" text-2xl">0</span>
+      </div>
+    </div>
+    <br>
+    <div class="bg-slate-100 py-10 px-4 rounded-lg " id="blancesheet">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
