@@ -13,14 +13,14 @@ function print() {
     if (balanceList[i] > 0) {
       income = income + balanceList[i];
       sheet.innerHTML += `<div class="flex justify-between py-1 " id="${i}">
-          <div class="flex gap-4"><span class="font-bold">${balanceList[i]}</span> <span>Income</span></div>
+          <div class="flex gap-4"><h1 class="font-bold">${balanceList[i]}</h1> <h1>Income</h1></div>
           <div class="flex gap-3"><button onclick="del(${i})" >Delete</button> <button>Edit</button></div>
         </div>`;
     } else {
       expanse = expanse + balanceList[i];
 
       sheet.innerHTML += `<div class="flex justify-between py-1 " id="${i}">
-          <div class="flex gap-4"><span class="font-bold">${balanceList[i]}</span> <span>Expance</span></div>
+          <div class="flex gap-4"><h1 class="font-bold">${balanceList[i]}</h1> <h1>Expance</h1></div>
           <div class="flex gap-3"><button onclick="del(${i})">Delete</button> <button>Edit</button></div>
         </div>`;
     }
@@ -60,10 +60,6 @@ function del(id) {
   save();
 }
 
-function edit(id){
-  edit balanceList 
-
-}
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
